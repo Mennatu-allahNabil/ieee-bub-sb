@@ -1,0 +1,16 @@
+{
+    "short_name": "IEEE",
+    "name": "IEEE BUB SB",
+    "icons": [
+      {
+        "src": "images/logo.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      }
+    ],
+    "start_url": "index.html",
+    "background_color": "#FFFFFF",
+    "display": "standalone",
+    "scope": "/IEEE/",
+    "theme_color": "#FFFFFF"
+  }
