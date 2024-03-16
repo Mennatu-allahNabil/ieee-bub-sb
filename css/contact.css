@@ -2,9 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-  
 }
-
 section{
     height: 100vh;
     width: 100%;
@@ -16,9 +14,7 @@ section{
     justify-content: center;
     align-items: center;
     padding-top: 9vh;
-
 }
-
 .container {
     width: 40%;
     margin: 0 auto;
@@ -27,21 +23,17 @@ section{
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 h1 {
     text-align: center;
     margin-bottom: 20px;
 }
-
 form {
     display: flex;
     flex-direction: column;
 }
-
 label {
     margin-bottom: 10px;
 }
-
 input[type="text"],
 input[type="email"],
 textarea {
@@ -50,12 +42,10 @@ textarea {
     border: 2px solid var(--dark-blue-2);
     border-radius: 4px;
 }
-
 input:focus,textarea:focus{
     outline: none;
     border: 2px solid var(--blue-1);
 }
-
 button {
     padding: 10px 20px;
     background-color: var(--dark-blue-2);
@@ -65,42 +55,31 @@ button {
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
-
 button:hover {
     background-color: var(--blue-1);
 }
-
 .ba{
     display: none;
 }
-
 @media screen and (max-width:500px){
     .container{
         flex-basis: 350px;
     }
-    
 } 
-
-
 @media screen and (max-width:900px) and (min-width:500px){
     .container{
        flex-basis: 430px;
     }
-    
 }
-
 @media screen and (max-width:1200px){
     .container{
        width: 50% ;
     }
-    
 }
-
 @media screen and (max-width: 768px) {
     .nav-menu {
         display: none;
     }
-  
     .nav-menu.active {
         display: flex;
         flex-direction: column;
@@ -111,21 +90,17 @@ button:hover {
         width: 100%;
         background-color: var(--dark-blue-1);
     }
-  
     .nav-menu.active a {
         padding: 10px 0;
         width: 100%;
     }
-  
     .nav-menu.active a:hover {
         background-color: var(--dark-blue-2);
     }
   }
-
   .ba {
     display: none;
   }
-  
   @media (max-width: 991px) {
     nav ul {
         font-size: 15px;
@@ -165,18 +140,15 @@ button:hover {
         width: 100%;
     }
   }
-  
   .mobile-menu {
     position: relative;
   }
-  
   #menu-toggle {
     background-color: transparent;
     border: none;
     cursor: pointer;
     padding: 25px;
   }
-  
   .bar {
     display: block;
     width: 25px;
@@ -184,7 +156,6 @@ button:hover {
     background-color: white;
     margin-bottom: 5px;
   }
-  
   .menu-items {
     display: none;
     position: absolute;
@@ -194,13 +165,10 @@ button:hover {
     padding: 10px;
     background-color: var(--dark-blue-1);
   }
-  
   .menu-items li {
     margin-bottom: 10px;
   }
-  
   .menu-items a {
     text-decoration: none;
     color: white;
   }
-  

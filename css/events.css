@@ -3,13 +3,11 @@
     --event-desc:1em;
     --event-season:0.8em;
 }
-
 main{
     background-image: linear-gradient(rgba(52, 51, 51, 0.7), rgba(48, 47, 47, 0.7)),url("../images/events/portal-spring23.jpg");
 background-repeat: no-repeat;
 background-size: cover;
 background-position: left top;
-
     height:50vh ;
     width: 100%;
     padding-top: 9vh;
@@ -18,10 +16,7 @@ justify-content: center;
 align-items: center;
 text-align: center;
 position: relative;
-
 }
-
-
 main div{
     position: relative;
     z-index: 10;
@@ -33,7 +28,6 @@ justify-content: center;
 align-items: center;
 row-gap: 2vh;
 /* backdrop-filter: blur(10px); */
-
 color: white;
 text-shadow:  0px 0px 2px var(--light-tur-1), 0 0 5px var(--light-tur-3);
 }
@@ -50,12 +44,10 @@ section,.events,.event{
     justify-content: center;
     align-items: center;
 }
-
 section{
     width: 100%;
     height: 100%;
     padding-top: 9vh;
-
 }
 .events{
     width: 98%;
@@ -87,14 +79,11 @@ transition: all 0.3s ease-in-out;
     box-shadow: 0 8px 10px black;
     scale: 1.02;
 }
-
-
 .event>*{
     padding: 1vh;
     height: 100%;
     flex-basis: 400px;
 }
-
 .event-img{
     width: 40%;
     height: 100%;
@@ -114,47 +103,37 @@ transition: all 0.3s ease-in-out;
     flex-direction: column;
  row-gap: 2vh;
 }
-
 .event-title{
 font-size: var(--event-title);
 }
 .event-desc{
     font-size: var(--event-desc);
 }
-
 .event:nth-child(even) .event-info {
   order: 1;
     text-align: right; 
 }
-
 .event:nth-child(even) .event-img {
     order: 2;
   }
-
 @media screen and (max-width:485px){
     .event{
         width: 93%;
     }
 }
  @media screen and (max-width:1080px){
-    
-  
 .event:nth-child(even) .event-info {
     order: 2;
     text-align: left;
   }
-  
   .event:nth-child(even) .event-img {
       order: 1;
     }
  }
-
- 
 @media screen and (max-width: 768px) {
     .nav-menu {
         display: none;
     }
-  
     .nav-menu.active {
         display: flex;
         flex-direction: column;
@@ -165,28 +144,23 @@ font-size: var(--event-title);
         width: 100%;
         background-color: var(--dark-blue-1);
     }
-  
     .nav-menu.active a {
         padding: 10px 0;
         width: 100%;
     }
-  
     .nav-menu.active a:hover {
         background-color: var(--dark-blue-2);
     }
   }
-  
   @media screen and (max-width: 600px) {
     .sec1 {
         padding-left: 5%;
         padding-right: 5%;
     }
   }
-  
   .ba {
     display: none;
   }
-  
   @media (max-width: 991px) {
     nav ul {
         font-size: 15px;
@@ -223,18 +197,15 @@ font-size: var(--event-title);
         width: 100%;
     }
   }
-  
   .mobile-menu {
     position: relative;
   }
-  
   #menu-toggle {
     background-color: transparent;
     border: none;
     cursor: pointer;
     padding: 25px;
   }
-  
   .bar {
     display: block;
     width: 25px;
@@ -242,7 +213,6 @@ font-size: var(--event-title);
     background-color: white;
     margin-bottom: 5px;
   }
-  
   .menu-items {
     display: none;
     position: absolute;
@@ -252,15 +222,10 @@ font-size: var(--event-title);
     padding: 10px;
     background-color: var(--dark-blue-1);
   }
-  
   .menu-items li {
     margin-bottom: 10px;
   }
-  
   .menu-items a {
     text-decoration: none;
     color: white;
   }
-  
-  
-    
