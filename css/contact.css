@@ -1,0 +1,206 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(52, 51, 51, 0.7), rgba(48, 47, 47, 0.7)),url("../images/events/portal-spring23.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 9vh;
+
+}
+
+.container {
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid var(--dark-blue-2);
+    border-radius: 4px;
+}
+
+input:focus,textarea:focus{
+    outline: none;
+    border: 2px solid var(--blue-1);
+}
+
+button {
+    padding: 10px 20px;
+    background-color: var(--dark-blue-2);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--blue-1);
+}
+
+.ba{
+    display: none;
+}
+
+@media screen and (max-width:500px){
+    .container{
+        flex-basis: 350px;
+    }
+    
+} 
+
+
+@media screen and (max-width:900px) and (min-width:500px){
+    .container{
+       flex-basis: 430px;
+    }
+    
+}
+
+@media screen and (max-width:1200px){
+    .container{
+       width: 50% ;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+  
+    .nav-menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--dark-blue-1);
+    }
+  
+    .nav-menu.active a {
+        padding: 10px 0;
+        width: 100%;
+    }
+  
+    .nav-menu.active a:hover {
+        background-color: var(--dark-blue-2);
+    }
+  }
+
+  .ba {
+    display: none;
+  }
+  
+  @media (max-width: 991px) {
+    nav ul {
+        font-size: 15px;
+        width: 100%;
+    }
+    nav ul li {
+        margin-left: 5px;
+    }
+    .logo i,
+    .logo h1 {
+        font-size: 25px;
+        margin-top: 15px;
+        font-size: 40px;
+    }
+  }
+  @media (max-width: 800px) {
+    .nav-menu{
+        display: none;
+    }
+    nav ul {
+        display: none;
+    }
+    .ba {
+        display: block;
+    }
+    .logo i,
+    .logo h1,
+    .desc p {
+        font-size: 50px;
+    }
+  }
+  @media (width<=676px) {
+    html {
+        font-size: 10px;
+    }
+    .container {
+        width: 100%;
+    }
+  }
+  
+  .mobile-menu {
+    position: relative;
+  }
+  
+  #menu-toggle {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 25px;
+  }
+  
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 5px;
+  }
+  
+  .menu-items {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--dark-blue-1);
+  }
+  
+  .menu-items li {
+    margin-bottom: 10px;
+  }
+  
+  .menu-items a {
+    text-decoration: none;
+    color: white;
+  }
+  
